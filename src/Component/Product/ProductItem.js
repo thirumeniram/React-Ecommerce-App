@@ -136,7 +136,7 @@ export default function ProductItem({ item }) {
             style={{ fontWeight: "bold", marginTop: "95px" }}
           >
             {item.edit ? (
-              <span style={{ fontSize: "1.2rem" }}>{item.title}</span>
+              <span style={{ fontSize: "1.2rem",MarginTop:"35px" }}>{item.title}</span>
             ) : (
               <input
                 type="text"
