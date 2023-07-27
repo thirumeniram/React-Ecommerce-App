@@ -46,9 +46,11 @@ export default function ProductSort() {
         id="sortElement"
       >
         {/* Sort by Price button */}
-        <span className="fw-bold " onClick={() => Sort()}>
-          Sort by Price
-        </span>
+        {!flag && (
+          <span className="fw-bold " onClick={() => Sort()}>
+            Sort by Price
+          </span>
+        )}
 
         {/* Cancel sort button (visible only when sorting is active) */}
         {flag && (
