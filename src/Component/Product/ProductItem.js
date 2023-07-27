@@ -123,7 +123,8 @@ export default function ProductItem({ item }) {
         <img
           src={item.thumbnail}
           alt=""
-          width={"390rem"}
+          id="MainImg"
+         
           height={"310rem"}
           onClick={() => handleClick(item)}
         />
