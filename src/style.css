@@ -109,11 +109,15 @@ body {
 }
 
 #MainContianer {
-  width: 25.6rem;
-  height: 39.75rem;
   flex-direction: row;
-  margin-top: 0.35rem;
   gap: 5px;
+  height: 39.75rem;
+  margin-top: 0.35rem;
+  width: 24.9rem;
+}
+
+#mainImg {
+width:24rem
 }
 
 #Header-text {
