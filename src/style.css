@@ -101,11 +101,11 @@ body {
 }
 
 #sortElement {
-  position: absolute;
-  top: 120px;
-  right: 35px;
-  width: 9rem;
   cursor: pointer;
+  position: absolute;
+  right: 3px;
+  top: 130px;
+  width: 7.2rem;
 }
 
 #MainContianer {
