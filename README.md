@@ -13,32 +13,26 @@ This React application allows you to fetch and display albums from a provided AP
 # Features
 
 - **Navbar**
-  - Searching any movie, will display the search results on the page, with real-time updates as you type.
-  - Each search result of the movie has a favorite button, allowing you to add movies to your "My favourite movies" list.
-  - Clicking on any particular search result opens a new page with more information about that movie.
+  - Displays the number of items in the cart.
+  - Show relevant navigation links to various pages in the app.
 
 - **Product-Addition**
-  - Detailed information about the movie, including its name, photo, plot, and more.
+  - By providing product details and clicking the "Add" button, the new product will be added, and an Alert will be displayed to indicate successful addition.
 
-- **Product-Page**
-  - Displays the list of all your favorite movies.
-  - Persistence of the favorite movies list, ensuring it remains intact even after closing or refreshing the browser.
-  - Each movie in the list has a "Remove from favorites" button to easily remove it from the list.
+- **Product-detail-Page**
+  - Shows all the details of a specific product.
 
-- **Product-  Edit**
-  - Searching any movie, will display the search results on the page, with real-time updates as you type.
-  - Each search result of the movie has a favorite button, allowing you to add movies to your "My favourite movies" list.
-  - Clicking on any particular search result opens a new page with more information about that movie.
-
+- **Product-Edit**
+  - Each product can be edited inline by clicking the "pencil" button. Upon finishing the edit, an Alert will be shown to indicate successful 
+     editing.
+  - Each product can be deleted by clicking the delete button. On deletion, an Alert will be shown.
+  
 - **Product-Sort**
-  - Searching any movie, will display the search results on the page, with real-time updates as you type.
-  - Each search result of the movie has a favorite button, allowing you to add movies to your "My favorite movies" list.
-  - Clicking on any particular search result opens a new page with more information about that movie.
-    
+  - We can sort the products by product's "price." by clicking the "sort by price" button.
+
 - **Cart-Summary**
-  - Searching any movie, will display the search results on the page, with real-time updates as you type.
-  - Each search result of the movie has a favorite button, allowing you to add movies to your "My favourite movies" list.
-  - Clicking on any particular search result opens a new page with more information about that movie.
+  - Displays all the items currently in the cart.
+  
 
 
 <div align="center">
