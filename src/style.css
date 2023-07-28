@@ -8,19 +8,20 @@ body {
 }
 
 .user {
+  color: #fff;
+  font-weight: 550;
   position: absolute;
-  color: white;
-  font-weight: bold;
-  top: 40px;
-  right: 5px;
+  top: 34px;
+  right: 27px;
 }
 
 .cart {
   position: absolute;
   color: white;
   font-weight: bold;
-  top: 40px;
-  right: 330%;
+  font-size: 15px;
+  right: 157px;
+  top: 110%;
 }
 
 .Container {
@@ -119,7 +120,7 @@ body {
 
 
 #Header-text {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   position: relative;
   color: #fff;
 }
