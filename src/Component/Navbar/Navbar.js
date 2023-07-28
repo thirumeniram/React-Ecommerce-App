@@ -43,6 +43,10 @@ export default function Navbar() {
               <Link
                 to="/productAddition"
                 className="nav-link active text-light"
+                  style={{fontSize: "1.17rem",
+                  position: "relative",
+                  right: "15px"
+                }}
               >
                 Add a product
               </Link>
@@ -57,7 +61,7 @@ export default function Navbar() {
               alt="error"
               width={"40rem"}
               onClick={() => navigate("/cart")}
-              style={{ cursor: "pointer", position: "absolute", right: "330%" }}
+              style={{ cursor: "pointer", position: "absolute", right: "157px", width:"90%"}}
             />
             <p className="cart">Cart</p>
 
@@ -66,9 +70,9 @@ export default function Navbar() {
               <p
                 className="bg-white rounded-circle position-absolute d-flex align-items-center justify-content-center"
                 style={{
-                  width: "1.5rem",
-                  height: "1.5rem",
-                  right: "290%",
+                  width: "1rem",
+                  height: "1rem",
+                  right: "150px",
                 }}
               >
                 {total}
@@ -82,7 +86,7 @@ export default function Navbar() {
               src="https://cdn-icons-png.flaticon.com/512/236/236832.png"
               alt="error"
               width={"40rem"}
-              style={{ cursor: "pointer" }}
+              style={{ cursor: "pointer", position: "relative", right: "26px" , height: "33px"}}
             />
             <p className="user">User</p>
           </div>
