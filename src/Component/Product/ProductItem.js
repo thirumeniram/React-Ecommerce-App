@@ -204,7 +204,7 @@ export default function ProductItem({ item }) {
         {/* footer section */}
         <div
           className="d-flex align-items-center justify-content-space-between gap-5 flex-lg-grow-1 p-1 "
-          style={{ width: "26.75rem", marginTop: "-25px" }}
+          style={{ width: "26.75rem", marginTop: "0px" }}
         >
           {item.edit ? (
             <button
