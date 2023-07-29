@@ -14,24 +14,24 @@ This React application allows you to fetch and display albums from a provided AP
 
 - **Navbar**
   - Displays the number of items in the cart.
-  - Show relevant navigation links to various pages in the app.
+  - Shows relevant navigation links to various pages in the app.
 
 - **Product-Addition**
-  - By providing product details and clicking the "Add" button, the new product will be added, and an Alert will be displayed to indicate successful addition.
+  - By providing product details and clicking the "Add" button, the new product will be added and an Alert will be displayed to indicate successful addition.
 
 - **Product-detail-Page**
   - Shows all the details of a specific product.
 
 - **Product-Edit**
-  - Each product can be edited inline by clicking the "pencil" button. Upon finishing the edit, an Alert will be shown to indicate successful 
+  - Each product can be edited by clicking the "pencil" button. Upon finishing the edit, an Alert will be shown to indicate successful 
      editing.
   - Each product can be deleted by clicking the delete button. On deletion, an Alert will be shown.
   
 - **Product-Sort**
-  - We can sort the products by product's "price." by clicking the "sort by price" button.
+  - We can sort the products by product's "price" by clicking the "sort by price" button.
 
 - **Cart-Summary**
-  - Displays all the items currently in the cart.
+  - Displays all the items that are currently in the cart.
   
 
 
@@ -39,19 +39,19 @@ This React application allows you to fetch and display albums from a provided AP
   <h1>Home-Page</h1>
 </div>
 
-![React-album Homapage](https://github.com/thirumeniram/React-Album/assets/66516937/eeb3d863-c298-4db6-85d2-52272596f934)
+![Ecommerce-Homepage](https://github.com/thirumeniram/React-Ecommerce-App/assets/66516937/0bf3f53a-c879-4987-9221-511b28ac8e62)
 
 <div align="center">
   <h1>Product-Addition-Page</h1>
 </div>
 
-![React-albumaddiotion-page](https://github.com/thirumeniram/React-Album/assets/66516937/0c21dfb1-5915-4391-9a97-9263d9948227)
+![Ecommerce-Addition](https://github.com/thirumeniram/React-Ecommerce-App/assets/66516937/5450d4a9-ff1a-4510-bc0d-2a1a6d30955c)
 
 <div align="center">
   <h1>cart-Summary-Page</h1>
 </div>
 
-![React-albumUpdation-page](https://github.com/thirumeniram/React-Album/assets/66516937/9302c816-7559-4346-993f-028239edcff1)
+![Ecommerce-cart](https://github.com/thirumeniram/React-Ecommerce-App/assets/66516937/7cc26f97-096f-41ec-a280-701d4651885e)
 
 # Getting Started with Create React App
 
