@@ -14,16 +14,16 @@ This React application allows you to fetch and display albums from a provided AP
 
 - **Navbar**
   - Displays the number of items in the cart.
-  - Show relevant navigation links to various pages in the app.
+  - Shows relevant navigation links to various pages in the app.
 
 - **Product-Addition**
-  - By providing product details and clicking the "Add" button, the new product will be added, and an Alert will be displayed to indicate successful addition.
+  - By providing product details and clicking the "Add" button, the new product will be added and an Alert will be displayed to indicate successful addition.
 
 - **Product-detail-Page**
   - Shows all the details of a specific product.
 
 - **Product-Edit**
-  - Each product can be edited inline by clicking the "pencil" button. Upon finishing the edit, an Alert will be shown to indicate successful 
+  - Each product can be edited by clicking the "pencil" button. Upon finishing the edit, an Alert will be shown to indicate successful 
      editing.
   - Each product can be deleted by clicking the delete button. On deletion, an Alert will be shown.
   
@@ -31,7 +31,7 @@ This React application allows you to fetch and display albums from a provided AP
   - We can sort the products by product's "price" by clicking the "sort by price" button.
 
 - **Cart-Summary**
-  - Displays all the items currently in the cart.
+  - Displays all the items that are currently in the cart.
   
 
 
