@@ -50,18 +50,18 @@ export default function ProductSort() {
           <span
             className="fw-bold"
             onClick={() => Sort()}
-            style={{ marginRight: "10px", cursor: "pointer" }}
+            style={{ marginLeft: "15px", cursor: "pointer" }}
           >
             Sort by Price
           </span>
 
           {/* Cancel sort button (visible only when sorting is active) */}
           {flag && (
-            <span style={{ cursor: "pointer" }}>
+            <span style={{ cursor: "pointer", marginRight: "15px" }}>
               <img
                 src={image}
                 alt="error"
-                width={"20rem"}
+                style={{ width: "20rem", marginLeft: "2.5px" }}
                 onClick={() => cancelSort()}
               />
             </span>
