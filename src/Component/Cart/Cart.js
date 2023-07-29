@@ -22,7 +22,7 @@ export default function Cart({ item }) {
         {/* Right part - Display product details */}
         <div
           className="d-flex flex-column gap-2 justify-content-start"
-          style={{ width: "50%", padding: "15px" }}
+          style={{ width: "50%", padding: "15px",overflowX:"hidden" }}
         >
           {/* Product title */}
           <h2>{item.title}</h2>
