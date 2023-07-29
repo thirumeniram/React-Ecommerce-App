@@ -74,7 +74,6 @@ export default function ProductAddition() {
   }
 
   return (
-    
     <div
       className="bg-light border border-1 border-dark mt-4 p-3 "
       id="AddContainer"
@@ -121,7 +120,7 @@ export default function ProductAddition() {
             backgroundColor: "#008080",
           }}
         >
-          Add to Cart
+          Add
         </button>
       </form>
     </div>
