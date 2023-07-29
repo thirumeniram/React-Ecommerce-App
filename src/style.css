@@ -107,6 +107,7 @@ body {
   right: 3px;
   top: 130px;
   width: 7.2rem;
+  white-space: nowrap;
 }
 
 #MainContianer {

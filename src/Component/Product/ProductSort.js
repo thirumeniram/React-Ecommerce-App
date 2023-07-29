@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addproducts } from "../../Redux/actions";
-import image from "../../Assets/swap.png";
+import image from "../../Assets/close.png";
 
 // The ProductSort function that sorts the products by price
 export default function ProductSort() {
@@ -46,24 +46,27 @@ export default function ProductSort() {
         id="sortElement"
       >
         {/* Sort by Price button */}
-        {!flag && (
-          <span className="fw-bold " onClick={() => Sort()}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <span
+            className="fw-bold"
+            onClick={() => Sort()}
+            style={{ marginRight: "10px", cursor: "pointer" }}
+          >
             Sort by Price
           </span>
-        )}
 
-        {/* Cancel sort button (visible only when sorting is active) */}
-        {flag && (
-          <span>
-            <img
-              src={image}
-              alt="error"
-              width={"30rem"}
-              onClick={() => cancelSort()}
-              style={{ cursor: "pointer" }}
-            />
-          </span>
-        )}
+          {/* Cancel sort button (visible only when sorting is active) */}
+          {flag && (
+            <span style={{ cursor: "pointer" }}>
+              <img
+                src={image}
+                alt="error"
+                width={"20rem"}
+                onClick={() => cancelSort()}
+              />
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );
