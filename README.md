@@ -48,7 +48,7 @@ This React ecommerce app connects to an API, displaying a wide range of products
 ![Ecommerce-Addition](https://github.com/thirumeniram/React-Ecommerce-App/assets/66516937/5450d4a9-ff1a-4510-bc0d-2a1a6d30955c)
 
 <div align="center">
-  <h1>cart-Summary-Page</h1>
+  <h1>Cart-Summary-Page</h1>
 </div>
 
 ![Ecommerce-cart](https://github.com/thirumeniram/React-Ecommerce-App/assets/66516937/7cc26f97-096f-41ec-a280-701d4651885e)
