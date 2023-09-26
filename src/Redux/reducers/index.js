@@ -1,4 +1,3 @@
-
 import {
   Addproducts,
   Addtocart,
@@ -6,6 +5,7 @@ import {
   cartlist,
   updatecart,
   delete_item,
+  DecrementItemQty,
 } from "../actions";
 
 // Initial state of the application
@@ -26,19 +26,65 @@ export default function products(state = initialState, action) {
         products: action.products,
       };
 
-    // When an item is added to the cart, update the cart array in the state
+    
     case Addtocart:
-      let flag = state.cart.indexOf(action.cart);
-      if (flag !== -1) {
-        action.cart.qty += 1; // If the item is already in the cart, increase its quantity
+      // Check if the item is already in the cart
+      let existingItemIndex = state.cart.findIndex(
+        (item) => item.id === action.cart.id
+      );
+
+      if (existingItemIndex !== -1) {
+        // If the item is already in the cart, create a new object with the incremented quantity
+        let updatedItem = {
+          ...state.cart[existingItemIndex],
+          qty: state.cart[existingItemIndex].qty + 1,
+        };
+
+        // Create a new cart array with the updated item
+        let updatedCart = state.cart.map((item, index) =>
+          index === existingItemIndex ? updatedItem : item
+        );
+
+        // Return the new state with the updated cart
         return {
           ...state,
+          cart: updatedCart,
         };
       } else {
+        // If the item is not in the cart, add it to the cart array with quantity set to 1
         return {
           ...state,
-          cart: [action.cart, ...state.cart], // If the item is not in the cart, add it to the cart array
+          cart: [{ ...action.cart, qty: 1 }, ...state.cart],
         };
+      }
+
+    case DecrementItemQty:
+      // Check if the item is in the cart
+      let itemIndex = state.cart.findIndex(
+        (item) => item.id === action.cart.id
+      );
+
+      if (itemIndex !== -1) {
+        // If the item is in the cart, create a new object with the decremented quantity
+        // Ensure the quantity does not go below 1
+        let updatedItem = {
+          ...state.cart[itemIndex],
+          qty: state.cart[itemIndex].qty - 1,
+        };
+
+        // Create a new cart array with the updated item
+        let updatedCart = state.cart.map((item, index) =>
+          index === itemIndex ? updatedItem : item
+        );
+
+        // Return the new state with the updated cart
+        return {
+          ...state,
+          cart: updatedCart,
+        };
+      } else {
+        // If the item is not found in the cart, return the current state
+        return state;
       }
 
     // When a product is selected to view, update the itemToDisplay in the state
@@ -52,7 +98,7 @@ export default function products(state = initialState, action) {
     case cartlist:
       let { cart } = state;
       let total = cart.reduce((total, item) => {
-        return (total += item.qty); 
+        return (total += item.qty);
       }, 0);
       return {
         ...state,
@@ -77,7 +123,7 @@ export default function products(state = initialState, action) {
       const position = state.cart.indexOf(action.item);
       if (position !== -1) {
         const updatedCart = [...state.cart];
-        updatedCart.splice(position, 1); 
+        updatedCart.splice(position, 1);
         return {
           ...state,
           cart: updatedCart,
