@@ -41,9 +41,7 @@ export default function ProductItem({ item }) {
       setaddedItem(false); // Update the state to indicate that the item is added to the cart
 
       window.alert("Item added to cart successfully");
-    } else {
-      navigate("/cart"); // Navigate to the cart page if the item is already added to the cart
-    }
+    } 
   }
 
   // Function to handle click event for editing the product details
