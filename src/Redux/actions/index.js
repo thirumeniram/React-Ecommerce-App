@@ -5,6 +5,16 @@ export const product = "product";
 export const cartlist = "cartlist";
 export const updatecart = "updatecart";
 export const delete_item = "delete_item";
+export const DecrementItemQty = "DecrementItemQty";
+
+// Action creators
+
+export function decrementQty(cart) {
+  return {
+    type: DecrementItemQty,
+    cart,
+  };
+}
 
 //  function to add products to the Redux store
 export function addproducts(products) {
